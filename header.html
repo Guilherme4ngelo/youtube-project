@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <style>
+
+            body {
+                margin: 0px;
+            }
+
+            .header{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .left-section {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                height: 50px;
+            }
+
+            .hamburger-menu {
+                width: 24px;
+                height: 24px;
+                margin-left: 24px;
+                margin-right: 24px;
+            }
+            .youtube-logo {
+                width: 90px;
+                height: 20px;
+            }
+
+            .middle-section {
+                display: flex;
+                align-items: center;
+                flex: 1;
+                margin-left: 70px;
+                margin-right: 35px;
+                height: 50px;
+            }
+
+            .search-bar {
+                flex: 1;
+                width: 0px;
+                max-width: 350px;
+                height: 36px;
+                padding-left: 10px;
+                font-size: 16px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(192, 192, 192);
+                border-bottom-left-radius: 3px;
+                border-top-left-radius: 3px;
+                border-right: none;
+                box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.05);
+            }
+
+            .search-bar::placeholder {
+                font-family: Roboto, Arial;
+                font-size: 16px;
+            }
+
+            .search-button {
+                height: 40px;
+                width: 60px;
+                border-style: solid;
+                border-width: 1px;
+                background-color: rgb(240, 240, 240);
+                border-color: rgb(192, 192, 192);
+                border-bottom-right-radius: 3px;
+                border-top-right-radius: 3px;
+                box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.05);
+            }
+
+            .search-img {
+                width: 24px;
+                height: 24px;
+                margin-top: 4px;
+            }
+            .voice-button {
+                border: none;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                margin-left: 10px;
+                background-color: rgb(245, 245, 245);
+                
+            }
+            .voice-search-img {
+                width: 24px;
+                height: 24px;
+                margin-top: 2px;
+            }
+
+            .right-section {
+                width: 180px;
+                margin-right: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-shrink: 0;
+            }
+
+            .upload-img {
+                width: 24px;
+            }
+            .apps-img {
+                width: 24px;
+            }
+            .notifications-img {
+                width: 24px;
+            }
+            .current-user-img {
+                width: 32px;
+                border-radius: 50%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="left-section">
+                <img class="hamburger-menu" src="imgs/hamburger-menu.svg">
+                <img class="youtube-logo" src="imgs/youtube-logo.svg">
+            </div>
+            <div class="middle-section">
+                <input class="search-bar" type="text" placeholder="Search">
+                <button class="search-button"><img class="search-img" src="imgs/search.svg"></button>
+                <button class="voice-button"><img class="voice-search-img" src="imgs/voice-search-icon.svg"></button>
+            </div>
+            <div class="right-section">
+                <img class="upload-img" src="imgs/upload.svg">
+                <img class="apps-img" src="imgs/youtube-apps.svg">
+                <img class="notifications-img" src="imgs/notifications.svg">
+                <img class="current-user-img" src="imgs/my-channel.jpeg">
+            </div>
+        </div>
+    </body>
+</html>
